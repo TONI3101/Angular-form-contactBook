@@ -1,0 +1,9 @@
+<h2>WORKING PAGE CONTACTS</h2>
+
+<div *ngFor="let user of contactDiary2">
+  <p>{{user.name}} {{user.surname}}
+    <a routerLink="/contact/{{user.id}}">CONTACT</a>
+  </p>
+</div>
+
+<button (click)="eliminar()"> BORRAR</button>
